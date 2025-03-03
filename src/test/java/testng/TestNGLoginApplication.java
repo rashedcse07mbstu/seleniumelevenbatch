@@ -69,10 +69,10 @@ public class TestNGLoginApplication extends BaseClass {
         String expectedPageTitle = driver.getTitle();
         String actualPageTitle = getPageTitle();
 
+        //Assertion
         Assert.assertEquals(expectedPageTitle, actualPageTitle);
 
-//      Assert.assertTrue(Boolean.parseBoolean(expectedPageTitle));
-
+        Assert.assertTrue(Boolean.parseBoolean(expectedPageTitle));
     }
 
     @AfterMethod
